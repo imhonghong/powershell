@@ -1,0 +1,2 @@
+cd <folder path>
+Get-ChildItem *<file type> -Filter "*<oldstring>*" | ForEach { Rename-Item $_ -NewName $_.Name.Replace("<oldstring>","<newstring>")}
